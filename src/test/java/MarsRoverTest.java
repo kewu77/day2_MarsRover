@@ -86,4 +86,18 @@ class MarsRoverTest {
         //Then
         assertEquals("0:0:W",report);
     }
+
+    @Test
+    void should_face_north_when_oriented_north_and_turn_right(){
+        // Given
+        MarsRover rover = new MarsRover();
+        // When
+        rover.ChangeMarsRoverOriented("R");
+        rover.ChangeMarsRoverOriented("R");
+        rover.ChangeMarsRoverOriented("R");
+        rover.ChangeMarsRoverOriented("R");
+        String report = rover.showStatus();
+        //Then
+        assertEquals("0:0:N",report);
+    }
 }
