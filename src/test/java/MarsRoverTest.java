@@ -217,9 +217,9 @@ class MarsRoverTest {
         // Given
         MarsRover rover = new MarsRover();
         // When
-        rover.ChangeMarsRoverStatus("L");
+        rover.ChangeMarsRoverStatus("LBBL");
         String report = rover.showStatus();
         //Then
-        assertEquals("1:0:W",report);
+        assertEquals("2:0:S",report);
     }
 }
