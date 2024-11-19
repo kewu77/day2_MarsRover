@@ -116,7 +116,7 @@ class MarsRoverTest {
     }
 
     @Test
-    void should_increase_y_when_oriented_north_and_move(){
+    void should_increase_y_coordinate_when_oriented_north_and_move(){
         // Given
         MarsRover rover = new MarsRover();
         // When
