@@ -22,6 +22,19 @@ public class MarsRover {
         }
     }
 
+    public void marsRoverMove(){
+        String direction = getDirection();
+        switch (direction) {
+            case "N" -> coordinateY++;
+            case "W" -> coordinateX--;
+            case "S" -> coordinateY--;
+            case "E" -> coordinateX++;
+        }
+    }
+
     public void ChangeMarsRoverPosition(String command) {
+        if(command.equals("M")){
+            marsRoverMove();
+        }
     }
 }
