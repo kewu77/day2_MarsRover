@@ -90,8 +90,8 @@ class MultiplicationTableBuilderTest {
     void should_return_true_when_isValid_given_start_2_end_3() {
         // Given
         MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
-        int start = 3;
-        int end = 2;
+        int start = 2;
+        int end = 3;
         // When
         boolean isValid = multiplicationTableBuilder.isValid(start,end);
 
