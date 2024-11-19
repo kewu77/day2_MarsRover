@@ -160,6 +160,6 @@ class MultiplicationTableBuilderTest {
         String expression = multiplicationTableBuilder.generateExpression(start,end);
 
         // Then
-        assertEquals(expression,"2*4=8");
+        assertEquals("2*4=8",expression);
     }
 }
