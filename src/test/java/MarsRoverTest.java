@@ -51,4 +51,16 @@ class MarsRoverTest {
     }
 
 
+    @Test
+    void should_face_east_when_oriented_north_and_turn_right(){
+        // Given
+        MarsRover rover = new MarsRover();
+        // When
+        rover.ChangeMarsRoverOriented("R");
+        String report = rover.showStatus();
+        //Then
+        assertEquals("0:0:E",report);
+    }
+
+
 }
