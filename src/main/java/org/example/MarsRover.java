@@ -8,4 +8,8 @@ public class MarsRover {
     public String showStatus() {
         return coordinateX + ":" + coordinateY + ":" + direction;
     }
+
+    public String ChangeMarsRoverOriented(String command) {
+        return null;
+    }
 }
