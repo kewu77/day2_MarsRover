@@ -150,4 +150,16 @@ class MarsRoverTest {
         //Then
         assertEquals("1:0:E",report);
     }
+
+    @Test
+    void should_decrease_x_coordinate_when_oriented_west_and_move(){
+        // Given
+        MarsRover rover = new MarsRover();
+        // When
+        rover.ChangeMarsRoverOriented("L");
+        rover.ChangeMarsRoverPosition("M");
+        String report = rover.showStatus();
+        //Then
+        assertEquals("-1:0:W",report);
+    }
 }
