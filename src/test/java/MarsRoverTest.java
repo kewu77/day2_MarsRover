@@ -125,4 +125,17 @@ class MarsRoverTest {
         //Then
         assertEquals("0:1:N",report);
     }
+
+    @Test
+    void should_decrease_y_coordinate_when_oriented_south_and_move(){
+        // Given
+        MarsRover rover = new MarsRover();
+        // When
+        rover.ChangeMarsRoverOriented("R");
+        rover.ChangeMarsRoverOriented("R");
+        rover.ChangeMarsRoverPosition("M");
+        String report = rover.showStatus();
+        //Then
+        assertEquals("0:-1:S",report);
+    }
 }
