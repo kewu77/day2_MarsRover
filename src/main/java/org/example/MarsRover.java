@@ -49,4 +49,8 @@ public class MarsRover {
             marsRoverBack();
         }
     }
+
+    public void ChangeMarsRoverStatus(String commands) {
+
+    }
 }

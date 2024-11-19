@@ -211,4 +211,15 @@ class MarsRoverTest {
         //Then
         assertEquals("1:0:W",report);
     }
+
+    @Test
+    void should_move_to_true_position_when_execute_long_command(){
+        // Given
+        MarsRover rover = new MarsRover();
+        // When
+        rover.ChangeMarsRoverStatus("L");
+        String report = rover.showStatus();
+        //Then
+        assertEquals("1:0:W",report);
+    }
 }
