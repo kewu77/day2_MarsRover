@@ -17,6 +17,8 @@ public class MarsRover {
     public void ChangeMarsRoverOriented(String command) {
         if(command.equals("L")){
             directionIndex--;
+        }else if(command.equals("R")){
+            directionIndex++;
         }
     }
 }
