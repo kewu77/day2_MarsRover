@@ -14,7 +14,9 @@ public class MarsRover {
         return directionIndex > 0 ? Directions[directionIndex % 4] : Directions[(directionIndex % 4 + 4) % 4];
     }
 
-    public String ChangeMarsRoverOriented(String command) {
-        return null;
+    public void ChangeMarsRoverOriented(String command) {
+        if(command.equals("L")){
+            directionIndex--;
+        }
     }
 }
