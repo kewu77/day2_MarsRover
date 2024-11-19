@@ -45,6 +45,8 @@ public class MarsRover {
     public void ChangeMarsRoverPosition(String command) {
         if(command.equals("M")){
             marsRoverMove();
+        }else if(command.equals("B")){
+            marsRoverBack();
         }
     }
 }
