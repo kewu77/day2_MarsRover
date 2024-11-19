@@ -21,4 +21,7 @@ public class MarsRover {
             directionIndex++;
         }
     }
+
+    public void ChangeMarsRoverPosition(String command) {
+    }
 }

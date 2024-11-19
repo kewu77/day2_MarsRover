@@ -114,4 +114,15 @@ class MarsRoverTest {
         //Then
         assertEquals("0:0:N",report);
     }
+
+    @Test
+    void should_increase_y_when_oriented_north_and_move(){
+        // Given
+        MarsRover rover = new MarsRover();
+        // When
+        rover.ChangeMarsRoverPosition("M");
+        String report = rover.showStatus();
+        //Then
+        assertEquals("0:1:N",report);
+    }
 }
