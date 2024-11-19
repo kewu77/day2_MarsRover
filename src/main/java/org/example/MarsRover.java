@@ -7,9 +7,12 @@ public class MarsRover {
     private static final String[] Directions= {"N","E","S","W"};
 
     public String showStatus() {
-            return coordinateX + ":" + coordinateY + ":" + Directions[directionIndex];
+            return coordinateX + ":" + coordinateY + ":" + getDirection();
     }
 
+    public String getDirection(){
+        return directionIndex > 0 ? Directions[directionIndex % 4] : Directions[(directionIndex % 4 + 4) % 4];
+    }
 
     public String ChangeMarsRoverOriented(String command) {
         return null;
