@@ -98,4 +98,56 @@ class MultiplicationTableBuilderTest {
         // Then
         assertTrue(isValid);
     }
+
+    @Test
+    void should_return_false_when_isValid_given_start_2_end_1() {
+        // Given
+        MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
+        int start = 2;
+        int end = 1;
+        // When
+        boolean isValid = multiplicationTableBuilder.isValid(start,end);
+
+        // Then
+        assertFalse(isValid);
+    }
+
+    @Test
+    void should_return_false_when_isValid_given_start_0_end_2() {
+        // Given
+        MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
+        int start = 0;
+        int end = 2;
+        // When
+        boolean isValid = multiplicationTableBuilder.isValid(start,end);
+
+        // Then
+        assertFalse(isValid);
+    }
+
+    @Test
+    void should_return_false_when_isValid_given_start_2_end_1001() {
+        // Given
+        MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
+        int start = 2;
+        int end = 1001;
+        // When
+        boolean isValid = multiplicationTableBuilder.isValid(start,end);
+
+        // Then
+        assertFalse(isValid);
+    }
+
+    @Test
+    void should_return_false_when_isValid_given_start_0_end_1001() {
+        // Given
+        MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
+        int start = 0;
+        int end = 1001;
+        // When
+        boolean isValid = multiplicationTableBuilder.isValid(start,end);
+
+        // Then
+        assertFalse(isValid);
+    }
 }
